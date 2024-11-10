@@ -1,0 +1,43 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/home-music/home-music",
+			"style" : 
+			{
+				"navigationBarTitleText" : "WDMusic"
+			}
+		},
+		{
+			"path" : "pages/home-video/home-video",
+			"style" : 
+			{
+				"navigationBarTitleText" : "推荐视频",
+				"enablePullDownRefresh": true
+			}
+		}
+	],
+	"tabBar": {
+		"selectedColor": "#00ff00",
+		"list": [
+			{
+				"iconPath": "static/images/tabbar/music_normal.png",
+				"selectedIconPath": "static/images/tabbar/music_active.png",
+				"pagePath": "pages/home-music/home-music",
+				"text": "音乐"
+			},
+			{
+				"iconPath": "static/images/tabbar/video_normal.png",
+				"selectedIconPath": "static/images/tabbar/video_active.png",
+				"pagePath": "pages/home-video/home-video",
+				"text": "视频"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "WDMusic",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

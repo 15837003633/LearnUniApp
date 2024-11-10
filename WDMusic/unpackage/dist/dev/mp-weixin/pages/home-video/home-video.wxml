@@ -1,0 +1,1 @@
+<view class="list"><block wx:for="{{a}}" wx:for-item="item" wx:key="c"><view class="list-item"><video-item wx:if="{{item.b}}" u-i="{{item.a}}" bind:__l="__l" u-p="{{item.b}}"></video-item></view></block></view>

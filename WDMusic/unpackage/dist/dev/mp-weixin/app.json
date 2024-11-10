@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/home-music/home-music",
+    "pages/home-video/home-video"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "WDMusic",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#00ff00",
+    "list": [
+      {
+        "iconPath": "static/images/tabbar/music_normal.png",
+        "selectedIconPath": "static/images/tabbar/music_active.png",
+        "pagePath": "pages/home-music/home-music",
+        "text": "音乐"
+      },
+      {
+        "iconPath": "static/images/tabbar/video_normal.png",
+        "selectedIconPath": "static/images/tabbar/video_active.png",
+        "pagePath": "pages/home-video/home-video",
+        "text": "视频"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

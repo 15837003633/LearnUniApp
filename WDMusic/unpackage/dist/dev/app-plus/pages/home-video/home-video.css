@@ -1,0 +1,35 @@
+.item[data-v-a2eff470] {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3125rem 0;
+}
+.item .album[data-v-a2eff470] {
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+.item .album .cover[data-v-a2eff470] {
+  width: 100%;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+}
+.item .album .info[data-v-a2eff470] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.3125rem 0.3125rem;
+}
+
+
+.list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+}
+.list-item{
+		width: 48%;
+}

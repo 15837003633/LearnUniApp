@@ -9,7 +9,7 @@ class WDRequest {
 	}
 
 	async request(options : any) {
-		const url = this.baseURL + '/' +options.url
+		const url = this.baseURL + options.url
 		
 		return new Promise((resolve,reject)=>{
 			uni.request({

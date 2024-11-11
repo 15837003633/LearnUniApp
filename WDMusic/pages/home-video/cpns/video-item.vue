@@ -1,5 +1,5 @@
 <template>
-	<view class="item">
+	<view class="item" @click="onClick()">
 		<view class="album">
 			<image class="cover" :src='props.itemInfo.cover' mode="widthFix"></image>
 			<view class="info">
@@ -17,6 +17,11 @@
 	}
 
 	const props = defineProps<IProps>()
+	const emits = defineEmits(["itemClick"])
+	
+	const onClick = ()=>{
+		emits("itemClick",props.itemInfo)
+	}
 </script>
 
 <style lang="less">

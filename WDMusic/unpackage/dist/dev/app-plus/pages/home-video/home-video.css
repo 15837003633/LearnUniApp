@@ -25,11 +25,11 @@
 }
 
 
-.list{
+.list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 }
-.list-item{
+.list-item {
 		width: 48%;
 }

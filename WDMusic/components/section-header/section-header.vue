@@ -1,35 +1,39 @@
 <template>
 	<view class="section">
 		<text class="title">{{title}}</text>
-		<text v-if="hasMore" class="more" @click="onMoreClick">更多 ></text>
+		<view v-if="hasMore" class="more" @click="onMoreClick">
+			<text>更多</text>
+			<uni-icons type="right" size="13" color="#aaa"></uni-icons>
+		</view>
 	</view>
 </template>
 
 <script setup lang="ts">
 	defineProps<{
-		title: String,
-		hasMore:Boolean
+		title : String,
+		hasMore : Boolean
 	}>()
-	
+
 	const emits = defineEmits(["moreClick"])
-	function onMoreClick(){
+	function onMoreClick() {
 		emits('moreClick')
 	}
 </script>
 
 <style lang="scss">
-	.section{
+	.section {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 20rpx 0;
-		.title{
+
+		.title {
 			font-weight: 500;
 			color: black;
 			font-size: 18px;
 		}
-			
-		.more{
+
+		.more {
 			color: #aaa;
 			font-size: 12px;
 		}

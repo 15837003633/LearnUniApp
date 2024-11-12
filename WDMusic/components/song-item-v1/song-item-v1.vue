@@ -5,7 +5,8 @@
 			<text class="name">{{songInfo.name}}</text>
 			<text class="author">{{songInfo.ar[0]?.name}}</text>
 		</view>
-		<view class="play">{{ ">" }}</view>
+		<uni-icons  type="right" size="13" color="#aaa"></uni-icons>
+		
 	</view>
 </template>
 
@@ -41,10 +42,6 @@ const props = defineProps<{
 				font-size: 12px;
 				color: #aaa;
 			}
-		}
-		.play{
-			font-size: 12px;
-			color:#aaa
 		}
 	}
 

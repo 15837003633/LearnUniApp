@@ -1,0 +1,4 @@
+.DS_Store
+./WDMusic/node_modules
+./WDMusic/dist
+./WDMusic/unpackage

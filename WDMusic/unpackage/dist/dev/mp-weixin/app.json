@@ -1,13 +1,15 @@
 {
   "pages": [
     "pages/home-music/home-music",
-    "pages/home-video/home-video"
+    "pages/home-video/home-video",
+    "pages/detail-video/detail-video",
+    "pages/song-list/song-list"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "WDMusic",
     "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "backgroundColor": "#F00"
   },
   "tabBar": {
     "selectedColor": "#00ff00",

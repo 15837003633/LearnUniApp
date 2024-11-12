@@ -1,4 +1,10 @@
 {
   "navigationBarTitleText": "WDMusic",
-  "usingComponents": {}
+  "backgroundColor": "#0f0",
+  "usingComponents": {
+    "uni-search-bar": "../../uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar",
+    "section-header": "../../components/section-header/section-header",
+    "song-item-v1": "../../components/song-item-v1/song-item-v1",
+    "banner-vue": "./cpns/banner"
+  }
 }

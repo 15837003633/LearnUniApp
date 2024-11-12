@@ -6,7 +6,7 @@ class WDRequest {
     this.timeOut = timeOut;
   }
   async request(options) {
-    const url = this.baseURL + "/" + options.url;
+    const url = this.baseURL + options.url;
     return new Promise((resolve, reject) => {
       common_vendor.index.request({
         ...options,

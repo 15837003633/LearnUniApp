@@ -4,7 +4,8 @@
 			"path" : "pages/home-music/home-music",
 			"style" : 
 			{
-				"navigationBarTitleText" : "WDMusic"
+				"navigationBarTitleText" : "WDMusic",
+				"backgroundColor": "#0f0"
 			}
 		},
 		{
@@ -13,10 +14,18 @@
 			{
 				"navigationBarTitleText" : "推荐视频",
 				"enablePullDownRefresh": true
+				
 			}
 		},
 		{
 			"path" : "pages/detail-video/detail-video",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/song-list/song-list",
 			"style" : 
 			{
 				"navigationBarTitleText" : ""
@@ -44,7 +53,7 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "WDMusic",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F00"
 	},
 	"uniIdRouter": {}
 }

@@ -1,0 +1,1 @@
+<view><section-header wx:if="{{a}}" u-i="9700a49a-0" bind:__l="__l" u-p="{{a}}"></section-header><block wx:for="{{b}}" wx:for-item="item" wx:key="c"><song-item-v2 wx:if="{{item.b}}" u-i="{{item.a}}" bind:__l="__l" u-p="{{item.b}}"></song-item-v2></block></view>

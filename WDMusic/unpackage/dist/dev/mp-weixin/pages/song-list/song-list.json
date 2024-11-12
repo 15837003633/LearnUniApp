@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "section-header": "../../components/section-header/section-header",
+    "song-item-v2": "../../components/song-item-v2/song-item-v2"
+  }
+}

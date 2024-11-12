@@ -1,15 +1,20 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
-const service_video = require("../../service/video.js");
+const service_video_video = require("../../service/video/video.js");
 if (!Math) {
   videoItem();
 }
 const videoItem = () => "./cpns/video-item.js";
-const _sfc_main = {
+const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
   __name: "home-video",
   setup(__props) {
     let offset = 0;
     const videoList = common_vendor.ref([]);
+    function onItemClick(itemInfo) {
+      common_vendor.index.navigateTo({
+        url: "/pages/detail-video/detail-video?mvid=" + itemInfo.id
+      });
+    }
     fetchNewList();
     common_vendor.onPullDownRefresh(() => {
       console.log("onPullDownRefresh");
@@ -21,14 +26,14 @@ const _sfc_main = {
     });
     function fetchNewList() {
       offset = 0;
-      service_video.getTopMVRequest(offset).then((res) => {
+      service_video_video.getTopMVRequest(offset).then((res) => {
         videoList.value = res.data;
         offset = videoList.value.length;
         common_vendor.index.stopPullDownRefresh();
       });
     }
     function fetchMoreList() {
-      service_video.getTopMVRequest(offset).then((res) => {
+      service_video_video.getTopMVRequest(offset).then((res) => {
         var _a;
         if (((_a = res.data) == null ? void 0 : _a.length) > 0) {
           videoList.value.push(...res.data);
@@ -44,15 +49,16 @@ const _sfc_main = {
       return {
         a: common_vendor.f(videoList.value, (item, k0, i0) => {
           return {
-            a: "65a262b6-0-" + i0,
-            b: common_vendor.p({
+            a: common_vendor.o(onItemClick, item.id),
+            b: "65a262b6-0-" + i0,
+            c: common_vendor.p({
               itemInfo: item
             }),
-            c: item.id
+            d: item.id
           };
         })
       };
     };
   }
-};
+});
 wx.createPage(_sfc_main);

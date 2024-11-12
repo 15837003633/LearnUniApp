@@ -1,1 +1,1 @@
-<view class="item"><view class="album"><image class="cover" src="{{a}}" mode="widthFix"></image><view class="info"><view class="left">{{b}}</view><view class="right">{{c}}</view></view></view><text class="title">{{d}}-{{e}}</text></view>
+<view class="item" bindtap="{{f}}"><view class="album"><image class="cover" src="{{a}}" mode="widthFix"></image><view class="info"><view class="left">{{b}}</view><view class="right">{{c}}</view></view></view><text class="title">{{d}}-{{e}}</text></view>

@@ -1,1 +1,0 @@
-<view class="song-item"><image class="album" src="{{a}}"></image><view class="info"><text class="name">{{b}}</text><text class="author">{{c}}</text></view><view class="play">{{d}}</view></view>

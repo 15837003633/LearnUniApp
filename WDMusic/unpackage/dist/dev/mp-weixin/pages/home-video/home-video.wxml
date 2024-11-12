@@ -1,1 +1,0 @@
-<view class="list"><block wx:for="{{a}}" wx:for-item="item" wx:key="d"><view class="list-item"><video-item wx:if="{{item.c}}" binditemClick="{{item.a}}" u-i="{{item.b}}" bind:__l="__l" u-p="{{item.c}}"></video-item></view></block></view>

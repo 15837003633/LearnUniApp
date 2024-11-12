@@ -1,1 +1,0 @@
-<view class="section"><text class="title">{{a}}</text><text wx:if="{{b}}" class="more" bindtap="{{c}}">更多 ></text></view>

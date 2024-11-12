@@ -1,1 +1,0 @@
-<view class="song-item"><text class="index">{{a}}</text><view class="info"><text class="name">{{b}}</text><view class="author">{{c}}</view></view></view>

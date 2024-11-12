@@ -1,1 +1,0 @@
-<view class="detail-video"><video class="player" src="{{a}}"/><scroll-view class="content" scroll-y><view class="info">{{b}} - {{c}}</view><block wx:for="{{d}}" wx:for-item="item" wx:key="b"><view> 相关视频： {{item.a}}</view></block></scroll-view></view>
